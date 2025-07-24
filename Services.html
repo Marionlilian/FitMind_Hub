@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+VN+Guides&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=award_star" />
+    <link href="https://www.hyperui.dev/components" rel="preconnect"/>
+    <style>
+        {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin-left: 220px; /* offset for sidebar */
+    }
+
+    .sidebar{
+      position: fixed;
+      top: 70;
+      left: 0;
+      height: 100%;
+      width: 220px;
+      background-color: #f5f5dc; /* warm beige */
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      z-index: 5;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #4f684e; 
+      margin-bottom: 20px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      background-color: #e0e0d1;
+      padding: 10px 14px;
+      border-radius: 5px;
+      width: 100%;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: #4f684e;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      body {
+        margin-left: 0;
+      }
+
+      .nav-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .nav-links a {
+        width: auto;
+      }
+      .main-content {
+      margin-top: 60px;
+      margin-left: 240px;
+      padding: 20px;
+    }
+}
+    </style>
+   
+</head>
+<body style="background-color:#F5EDE0;">
+<header class="body-font" style="color:#FFCF99;padding: 0%; background-color: #A5402D;">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <img src="Images/logo.png" alt="logo" style="width: 100px; height: auto;">
+    <!-- <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <svg xmlns="" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+      </svg> -->
+      <span class="ml-3 text-xl" style="padding: 0%;"><b>FitMind Hub</b></span>
+    </a>
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+      <a href="index.html" class="mr-5 hover:text-gray-900">// HOME</a>
+      <a href="Services.html" class="mr-5 hover:text-gray-900">// SERVICES</a>
+      <a class="mr-5 hover:text-gray-900">Third Link</a>
+      <a class="mr-5 hover:text-gray-900">Fourth Link</a>
+    </nav>
+    <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </button>
+  </div>
+</header>
+
+  <nav class="sidebar"> 
+    <div class="nav-links">
+      <a href="Services.html">Find a Therapist</a>
+      <a href="#emergency">Report & Emergency</a>
+      <a href="#quotes">Motivation Quotes</a>
+      <a href="#diary">Diary</a>
+      <a href="#selfcare">Self-Care Library</a>
+      <a href="#tracker">Mood Tracker</a>
+      <a href="#groups">Support Groups</a>
+      <a href="#resources">Resources</a>
+    </div>
+  </nav>
+
+  <div class="main-content" style="padding: 40px; margin-left: 240px;">
+    <h1 style="text-align: center; color: #721121; font-size: 40px; font-weight: bold;">Welcome to FitMind Hub</h1>
+    <p>Choose the service you are interested to find the right therapist. </p>
+    <section class="text-gray-600 body-font">
+  <div class="container px- py-6 mx-auto">
+    <div class="flex flex-wrap -m-4">
+      <div class="p-4 lg:w-1/3">
+        <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+         <img src="Images/individual.jpg" alt="">
+            <!-- <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2> -->
+          <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Individual Therapy</h1>
+          <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+          <a class="text-indigo-500 inline-flex items-center">Learn More
+            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+            <span class="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+              <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>1.2K
+            </span>
+            <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+              <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+              </svg>6
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 lg:w-1/3">
+        <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+          <img src="Images/couple.webp" alt="">
+            <!-- <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2> -->
+          <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Couple Therapy</h1>
+          <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+          <a class="text-indigo-500 inline-flex items-center">Learn More
+            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+            <span class="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+              <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>1.2K
+            </span>
+            <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+              <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+              </svg>6
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 lg:w-1/3">
+        <div class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
+          <img src="Images/teen.jpg" alt="">
+            <!-- <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY</h2> -->
+          <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">Teen Therapy</h1>
+          <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+          <a class="text-indigo-500 inline-flex items-center">Learn More
+            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          <div class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
+            <span class="text-gray-400 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+              <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>1.2K
+            </span>
+            <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+              <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+              </svg>6
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="max-w-5xl mx-auto px-6 py-2 text-center">
+    <h2 class="text-3xl font-bold mb-4 text-sage-700">How it works</h2>
+    <p class="text-lg text-gray-600 mb-12">Start your journey in just 4 easy steps!</p>
+
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+      <div class="flex flex-col items-center text-center max-w-sm">
+        <svg class="w-12 h-12 text-green-600 mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M4 6h16M4 10h16M4 14h7"></path>
+        </svg>
+        <h3 class="text-xl font-semibold mb-2">Quick assessment</h3>
+        <p class="text-gray-600">Complete our 60-second online assessment.</p>
+      </div>
+      <svg class="w-6 h-6 text-gray-400 hidden lg:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
+      <div class="flex flex-col items-center text-center max-w-sm">
+        <svg class="w-12 h-12 text-blue-600 mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 7h18M3 12h18M3 17h18" />
+        </svg>
+        <h3 class="text-xl font-semibold mb-2">Get matched</h3>
+        <p class="text-gray-600">Connect with a therapist that fits your needs.</p>
+      </div>
+      <svg class="w-6 h-6 text-gray-400 hidden lg:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
+      <div class="flex flex-col items-center text-center max-w-sm">
+        <svg class="w-12 h-12 text-yellow-600 mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.105 0-2 .672-2 1.5S10.895 11 12 11s2-.672 2-1.5S13.105 8 12 8zM12 14c-2.21 0-4 1.12-4 2.5V18h8v-1.5c0-1.38-1.79-2.5-4-2.5z" />
+        </svg>
+        <h3 class="text-xl font-semibold mb-2">Pick your level of support</h3>
+        <p class="text-gray-600">Choose the plan that fits your therapy needs and budget.</p>
+      </div>
+      <svg class="w-6 h-6 text-gray-400 hidden lg:block" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
+
+      <div class="flex flex-col items-center text-center max-w-sm">
+        <svg class="w-12 h-12 text-purple-600 mb-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14m-6-4v8m0 0a4 4 0 004 4h0a4 4 0 004-4m-8 0a4 4 0 014-4h0a4 4 0 014 4" />
+        </svg>
+        <h3 class="text-xl font-semibold mb-2">Begin therapy</h3>
+        <p class="text-gray-600">Message your therapist and begin your journey today!</p>
+      </div>
+    </div>
+    <div class="mt-12">
+      <a href="#start" class="bg-[#A5402D] hover:bg-[#FFCF99] text-white font-medium py-3 px-6 rounded-lg transition">Start Here</a>
+    </div>
+  </section>
+<div style="display: grid; grid-template-columns: repeat(2,1fr); padding-top: 4%;">
+<div class="grid-content">
+<img src="Images/phone.jpg" alt="tele-counseling">
+</div>
+<div class="grid-content py-18">
+    <h1 style="text-align: center; font-size: 30px; color: #721121;">
+        Benefits of Using FitMind Hub
+    </h1><br>
+    <div class="grid gap-6 sm:grid-cols-2 text-left text-xl">
+      <div class="flex items-start gap-3">
+        <svg class="w-6 h-6 text-green-600 mt-1" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M5 13l4 4L19 7"/>
+        </svg>
+        <p><strong>Eliminate commute time</strong> and scheduling hassles</p>
+      </div>
+
+      <div class="flex items-start gap-3">
+        <svg class="w-6 h-6 text-green-600 mt-1" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M5 13l4 4L19 7"/>
+        </svg>
+        <p><strong>Flexible plans</strong> to meet your needs and lifestyle</p>
+      </div>
+      <div class="flex items-start gap-3">
+        <svg class="w-6 h-6 text-green-600 mt-1" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M5 13l4 4L19 7"/>
+        </svg>
+        <p><strong>Seamlessly switch therapists</strong>, at no extra cost</p>
+      </div>
+      <div class="flex items-start gap-3">
+        <svg class="w-6 h-6 text-green-600 mt-1" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M5 13l4 4L19 7"/>
+        </svg>
+        <p><strong>Save money</strong> while receiving high-quality care</p>
+      </div>
+    </div>
+</div>
+</div>
+<div>
+    <h1 style="text-align: center; font-size: 30px; font-weight: bold;">
+        Take our 60-second assessment
+    </h1>
+    <p style="text-align: center;"> Find the licensed therapist you could be working with!</p>
+    <div class="mt-12 px-96 py-2">
+      <a href="#start" class="bg-[#A5402D] hover:bg-[#FFCF99] text-white font-medium py-3 px-6 rounded-lg transition">Take Assessment</a>
+    </div>
+    <div class="bg-gray-100 bottom-0 p-4" style="margin-bottom: 0%;margin-top: 2%; background-color:  #A5402D;margin-left: 0%; margin-right: 0%;>
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Tailblocks —
+        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@knyttneve</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+</div>
+  
+
+
+    </div>
+  </div>
+
+    
+</body>
+</html>
