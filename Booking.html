@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+VN+Guides&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=award_star" />
+    <link href="https://www.hyperui.dev/components" rel="preconnect"/>
+</head>
+<header class="body-font" style="color:#FFCF99;padding: 0%; background-color: #A5402D;">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <img src="Images/logo.png" alt="logo" style="width: 100px; height: auto;">
+      <span class="ml-3 text-xl" style="padding: 0%;"><b>FitMind Hub</b></span>
+    </a>
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+      <a href="index.html" class="mr-5 hover:text-gray-900">// HOME</a>
+      <a href="Services.html" class="mr-5 hover:text-gray-900">// SERVICES</a>
+      <a class="mr-5 hover:text-gray-900">Third Link</a>
+      <a class="mr-5 hover:text-gray-900">Fourth Link</a>
+    </nav>
+    <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </button>
+  </div>
+</header>
+ <div class="min-h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('Images/booking.avif');">
+    <div class="bg-black bg-opacity-60 min-h-screen flex items-center justify-center px-4 py-12">
+
+      <section class="max-w-2xl w-full bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Book a Therapist</h2>
+        <form action="#" method="POST" class="space-y-5">
+          <div>
+            <label for="name" class="block font-medium">Full Name</label>
+            <input type="text" id="name" name="name" required
+                   class="w-full mt-1 border border-gray-300 p-3 rounded focus:ring-2 focus:ring-green-400">
+          </div>
+
+          <div>
+            <label for="email" class="block font-medium">Email Address</label>
+            <input type="email" id="email" name="email" required
+                   class="w-full mt-1 border border-gray-300 p-3 rounded focus:ring-2 focus:ring-green-400">
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-1">
+              <label for="date" class="block font-medium">Preferred Date</label>
+              <input type="date" id="date" name="date" required
+                     class="w-full mt-1 border border-gray-300 p-3 rounded focus:ring-2 focus:ring-green-400">
+            </div>
+            <div class="flex-1">
+              <label for="time" class="block font-medium">Preferred Time</label>
+              <input type="time" id="time" name="time" required
+                     class="w-full mt-1 border border-gray-300 p-3 rounded focus:ring-2 focus:ring-green-400">
+            </div>
+          </div>
+
+          <div>
+            <label for="therapist" class="block font-medium">Choose a Therapist</label>
+            <select id="therapist" name="therapist" required
+                    class="w-full mt-1 border border-gray-300 p-3 rounded focus:ring-2 focus:ring-green-400">
+              <option value="">-- Select --</option>
+              <option value="john">Dr. John Lubano</option>
+              <option value="jane">Dr. Jane Chebet</option>
+              <option value="lee">Dr. Lee Kimani</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="note" class="block font-medium">Notes (optional)</label>
+            <textarea id="note" name="note" rows="3"
+                      class="w-full mt-1 border border-gray-300 p-3 rounded focus:ring-2 focus:ring-green-400"
+                      placeholder="Anything you'd like your therapist to know..."></textarea>
+          </div>
+
+          <button type="submit"
+                  class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded transition">
+            Confirm Booking
+          </button>
+        </form>
+      </section>
+    </div>
+  </div>
+<body>
+    
+</body>
+</html>
