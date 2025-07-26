@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AboutUs</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=award_star" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=award_star" />
     <link href="https://www.hyperui.dev/components" rel="preconnect"/>
     <style>
         {
@@ -33,6 +33,7 @@
       position: fixed;
       top: 70;
       left: 0;
+      bottom: 10;
       height: 100%;
       width: 220px;
       background-color: #f5f5dc; 
@@ -43,6 +44,9 @@
       gap: 20px;
       box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
       z-index: 5;
+      padding-bottom: 10%;
+      margin-bottom: 50px;
+     
     }
 
     .logo {
@@ -104,18 +108,19 @@
     }
 }
     </style>
-    
 </head>
 <body style="background-color:#F5EDE0;">
-    <header class="body-font" style="color:#FFCF99;padding: 0%; background-color: #A5402D;">
+
+     <body class="py-10 px-4">
+         <header class="body-font" style="color:#FFCF99;padding: 0%; background-color: #A5402D;">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <img src="Images/logo.png" alt="logo" style="width: 100px; height: auto;">
       <span class="ml-3 text-xl" style="padding: 0%;"><b>FitMind Hub</b></span>
     </a>
     <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-      <a href="index.html" class="mr-5 hover:text-gray-900">Home</a>
-      <a href="Services.html" class="mr-5 hover:text-gray-900">Services</a>
-      <a href="About.html" class="mr-5 hover:text-gray-900">About Us</a>
+      <a href="index.html" class="mr-5 hover:text-gray-900">// HOME</a>
+      <a href="Services.html" class="mr-5 hover:text-gray-900">// SERVICES</a>
+      <a href="Booking.html" class="mr-5 hover:text-gray-900">Booking</a>
       <a class="mr-5 hover:text-gray-900">Fourth Link</a>
     </nav>
     <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
@@ -126,90 +131,83 @@
   </div>
 </header>
 
-  <nav class="sidebar"> 
+ <nav class="sidebar"> 
     <div class="nav-links">
       <a href="Therapists.html">Find a Therapist</a>
       <a href="Emergency.html">Report & Emergency</a>
-      <a href="#quotes">Motivation Quotes</a>
+      <a href="motivation.html">Motivation Quotes</a>
       <a href="#diary">Diary</a>
       <a href="#selfcare">Self-Care Library</a>
       <a href="#tracker">Mood Tracker</a>
       <a href="support.html">Support Groups</a>
-      <a href="blogs.html">Resources</a>
+      <a href="#resources">Resources</a>
     </div>
   </nav>
 
   <div class="main-content" style="padding: 40px; margin-left: 240px;">
 
-     <section class="px-4 py-8" style="background-image: url(Images/tree.png);">
-    <h1 class="text-4xl font-bold text-green-800 mb-4" style="margin-left: 300px;">About FitMind Hub</h1>
-    <p class="text-lg text-gray-700 max-w-2xl mx-auto text-center">Where mental wellness meets compassion. We're dedicated to supporting your healing journey.</p>
-  </section>
+      <div class="text-center py-10 bg-green-100">
+    <h1 class="text-4xl font-bold text-green-800" style="display: flex; margin-left: 200px;"><img src="Images/handshake.png" alt="" style="width: 50px; display: flex;margin-right: 1%;"> Join a Support Group</h1>
+    <p class="mt-2 text-lg">Connect, heal, and grow with others on similar journeys.</p>
+  </div>
 
-  
-  <section class="max-w-5xl mx-auto px-4 py-12">
-    <h2 class="text-2xl font-bold text-green-700 mb-4" style="display: flex;"> <img src="Images/story.png" alt="" style="width: 30px; display: flex;margin-right: 1%;">Our Story</h2>
-    <p class="text-gray-700 leading-relaxed">
-      FitMind Hub was born out of a shared vision to make mental health support accessible, personalized, and stigma-free for everyone in Kenya and beyond. Founded in 2025, we saw a growing need for a safe online space where people could find the right therapist, track their well-being, and connect with others facing similar struggles. Whether you're managing anxiety, grief, or burnout, we're here to walk the journey with you—at your pace, in your own way.
-    </p>
-  </section>
 
-  
-  <section class="bg-white py-12 px-4">
-    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
-      <img src="Images/founder.webp" alt="Founder" class="w-48 h-48 rounded-full shadow-md">
-      <div>
-        <h2 class="text-2xl font-bold text-green-700 mb-2">Meet Our Founder</h2>
-        <h3 class="text-lg font-semibold text-gray-800">Dr. Amina Wanjiru</h3>
-        <p class="text-gray-600 mt-2">Clinical Psychologist, Mental Health Advocate</p>
-        <p class="text-gray-700 mt-4">
-          Amina’s passion for mental wellness is deeply rooted in her experience working with underserved communities across Kenya. She envisioned FitMind Hub as a digital sanctuary—a space for care, connection, and empowerment. Her commitment to culturally sensitive care is reflected in everything we do.
-        </p>
+  <section class="max-w-6xl mx-auto px-4 py-10">
+    <div class="grid md:grid-cols-3 gap-8">
+
+    
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h2 class="text-xl font-semibold text-green-700 mb-2">Grief Support</h2>
+        <p class="text-sm text-gray-600 mb-4">Find comfort and community as you navigate the loss of a loved one.</p><br>
+        <a href="#" class="text-sm text-white bg-green-600 px-4 py-2 rounded hover:bg-green-700">Join Group</a>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h2 class="text-xl font-semibold text-blue-700 mb-2">Addiction Recovery</h2>
+        <p class="text-sm text-gray-600 mb-4">Supportive space for those recovering from substance use disorders.</p>
+        <a href="#" class="text-sm text-white bg-blue-600 px-4 py-2 rounded hover:bg-blue-700">Join Group</a>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h2 class="text-xl font-semibold text-purple-700 mb-2">Parenting Support</h2>
+        <p class="text-sm text-gray-600 mb-4">Share experiences, seek advice, and support each other through parenting challenges.</p>
+        <a href="#" class="text-sm text-white bg-purple-600 px-4 py-2 rounded hover:bg-purple-700">Join Group</a>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h2 class="text-xl font-semibold text-pink-700 mb-2">Anxiety & Stress</h2>
+        <p class="text-sm text-gray-600 mb-4">Connect with others managing anxiety and stress-related issues.</p><br>
+        <a href="#" class="text-sm text-white bg-pink-600 px-4 py-2 rounded hover:bg-pink-700">Join Group</a>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h2 class="text-xl font-semibold text-yellow-700 mb-2">Youth Support</h2>
+        <p class="text-sm text-gray-600 mb-4">Safe space for teens and young adults to talk about mental health and self-growth.</p>
+        <a href="#" class="text-sm text-white bg-yellow-600 px-4 py-2 rounded hover:bg-yellow-700">Join Group</a>
+      </div>
+
+      <div class="bg-white shadow-lg rounded-lg p-6">
+        <h2 class="text-xl font-semibold text-red-700 mb-2">Domestic Abuse Recovery</h2>
+        <p class="text-sm text-gray-600 mb-4">Confidential group for survivors of domestic abuse seeking support and healing.</p>
+        <a href="#" class="text-sm text-white bg-red-600 px-4 py-2 rounded hover:bg-red-700">Join Group</a>
       </div>
     </div>
   </section>
 
-  <section class="max-w-5xl mx-auto px-4 py-12">
-    <h2 class="text-2xl font-bold text-green-700 mb-6" style="display: flex;"><img src="Images/values.png" alt="" style="width: 30px; display: flex;margin-right: 1%;">Our Values</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-green-50 p-5 rounded shadow text-center">
-        <h3 class="text-lg font-semibold text-green-800 mb-2">Compassion</h3>
-        <p class="text-gray-700">We meet everyone with empathy, dignity, and care.</p>
-      </div>
-      <div class="bg-green-50 p-5 rounded shadow text-center">
-        <h3 class="text-lg font-semibold text-green-800 mb-2">Accessibility</h3>
-        <p class="text-gray-700">We ensure mental health support is within reach for all.</p>
-      </div>
-      <div class="bg-green-50 p-5 rounded shadow text-center">
-        <h3 class="text-lg font-semibold text-green-800 mb-2">Growth</h3>
-        <p class="text-gray-700">We foster safe spaces for healing, self-discovery, and progress.</p>
-      </div>
+  <section class="bg-white py-10 mt-10">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-2xl font-bold text-gray-700 mb-4" style="display: flex;"><img src="Images/books.png" alt="" style="width: 20px; display: flex;margin-right: 1%;"> Helpful Resources</h2>
+      <ul class="list-disc list-inside text-gray-600 space-y-2">
+        <li><a href="https://cmha.ca" target="_blank" class="text-green-700 hover:underline">Canadian Mental Health Association (CMHA)</a> – mental wellness tools and support.</li>
+        <li><a href="https://kidshelpphone.ca" target="_blank" class="text-green-700 hover:underline">Kids Help Phone</a> – support for youth and teens.</li>
+        <li><a href="https://wellnesstogether.ca" target="_blank" class="text-green-700 hover:underline">Wellness Together Canada</a> – free online mental health services.</li>
+        <li><a href="https://www.nami.org" target="_blank" class="text-green-700 hover:underline">NAMI (National Alliance on Mental Illness)</a> – advocacy and education.</li>
+        <li><a href="#emergency" class="text-green-700 hover:underline">Emergency Contacts</a> – access urgent help now.</li>
+      </ul>
     </div>
   </section>
 
- 
-  <section class="bg-white py-12 px-4">
-    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
-      <div>
-        <h2 class="text-2xl font-bold text-green-700 mb-4" style="display: flex;"><img src="Images/location.png" alt="" style="width: 30px; display: flex;margin-right: 1%;"> Our Location</h2>
-        <p>FitMind Hub, Ngong Lane Plaza,<br>Nairobi, Kenya</p>
-        <p class="mt-4">Email: <a href="mailto:support@fitmindhub.co.ke" class="text-green-700 underline">support@fitmindhub.co.ke</a></p>
-        <p>Phone: <a href="tel:+254712345678" class="text-green-700 underline">+254 712 345 678</a></p>
-        <p class="mt-4">Business Hours: Mon – Fri, 9am – 5pm</p>
-      </div>
-
-     
-      <div>
-        <h2 class="text-2xl font-bold text-green-700 mb-4" style="display: flex;"> <img src="Images/feedback.png" alt="" style="width: 20px; display: flex;margin-right: 1%;"> Feedback Form</h2>
-        <form class="bg-gray-100 p-6 rounded shadow space-y-4">
-          <input type="text" placeholder="Your Name" class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-300">
-          <input type="email" placeholder="Your Email" class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-300">
-          <textarea rows="4" placeholder="Your Message" class="w-full px-4 py-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-300"></textarea>
-          <button type="submit" class="bg-green-700 text-white px-6 py-2 rounded hover:bg-green-800 transition">Send Feedback</button>
-        </form>
-      </div>
-    </div>
-  </section>
+  <footer>
 <div class="bg-gray-100 bottom-0 p-4" style="margin-bottom: 0%;margin-top: 2%; background-color:  #A5402D;margin-left: 0%; margin-right: 0%;>
     <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
     <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
@@ -243,13 +241,14 @@
     </div>
     </div>
 </div>
-</div>
+
+</footer>
+
+
+
+  </div>
   
 
-
-
-</div>
     
 </body>
-
 </html>
