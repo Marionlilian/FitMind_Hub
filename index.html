@@ -46,12 +46,96 @@
       padding-top: 20%; 
       margin-top: 20px;
     }
-        
+        {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin-left: 220px; 
+    }
+
+    .sidebar{
+      position: fixed;
+      top: 70;
+      left: 0;
+      height: 100%;
+      width: 220px;
+      background-color: #f5f5dc; 
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      z-index: 5;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #4f684e; 
+      margin-bottom: 20px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      background-color: #e0e0d1;
+      padding: 10px 14px;
+      border-radius: 5px;
+      width: 100%;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: #4f684e;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      body {
+        margin-left: 0;
+      }
+
+      .nav-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .nav-links a {
+        width: auto;
+      }
+      .main-content {
+      margin-top: 60px;
+      margin-left: 240px;
+      padding: 20px;
+    }
+}
+   
     </style>
 </head>
 <body style="background-color:#F5EDE0;">
-   
-    <header class="body-font" style="color:#FFCF99;padding: 0%; background-color: #A5402D;">
+   <header class="body-font" style="color:#FFCF99;padding: 0%; background-color: #A5402D;">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <img src="Images/logo.png" alt="logo" style="width: 100px; height: auto;">
       <span class="ml-3 text-xl" style="padding: 0%;"><b>FitMind Hub</b></span>
@@ -69,6 +153,7 @@
     </button>
   </div>
 </header>
+
 <div class="image-container">
  <img src="Images/telehealth.jpg" alt="back1">
  <div class="text-overlay">
@@ -185,45 +270,44 @@
   <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
       <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-        <svg xmlns="" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-        </svg>
-        <span class="ml-3 text-xl">Tailblocks</span>
+      <img src="Images/logo.png" alt="logo" style="width: 80px;">
+
+        <span class="ml-3 text-xl" style="color: #FDD5A6;"><b>FitMind Hub</b></span>
       </a>
-      <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
+      <p class="mt-2 text-sm text-black" style="margin-left: 10%;"><b>BRIGHTER DAYS BEGIN HERE</b></p>
     </div>
     <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
         <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Services</h2>
         <nav class="list-none mb-10">
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Individual Therapy</a>
+            <a class="text-black hover:text-gray-800">Individual Therapy</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Couple Therapy</a>
+            <a class="text-black hover:text-gray-800">Couple Therapy</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Grief Therapy</a>
+            <a class="text-black hover:text-gray-800">Grief Therapy</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Teen Therapy</a>
+            <a class="text-black hover:text-gray-800">Teen Therapy</a>
           </li>
         </nav>
       </div>
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Quick Links</h2>
+        <h2 class="title-font font-medium text-black tracking-widest text-sm mb-3">Quick Links</h2>
         <nav class="list-none mb-10">
           <li>
-            <a href="Therapists.html" class="text-gray-600 hover:text-gray-800">Find a therapist</a>
+            <a href="Therapists.html" class="text-black hover:text-gray-800">Find a therapist</a>
           </li>
           <li>
-            <a href="motivation.html" class="text-gray-600 hover:text-gray-800">Motivational Quotes</a>
+            <a href="motivation.html" class="text-black hover:text-gray-800">Motivational Quotes</a>
           </li>
           <li>
-            <a href="Emergency.html" class="text-gray-600 hover:text-gray-800">Report Emergency</a>
+            <a href="Emergency.html" class="text-black hover:text-gray-800">Report Emergency</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Take Assessment</a>
+            <a class="text-black hover:text-gray-800">Take Assessment</a>
             
           </li>
         </nav>
@@ -232,16 +316,16 @@
         <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">About</h2>
         <nav class="list-none mb-10">
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Our Mission</a>
+            <a class="text-black hover:text-gray-800">Our Mission</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Our Team</a>
+            <a class="text-black hover:text-gray-800">Our Team</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Careers</a>
+            <a class="text-black hover:text-gray-800">Careers</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">How it Works</a>
+            <a class="text-black hover:text-gray-800">How it Works</a>
           </li>
         </nav>
       </div>
@@ -249,7 +333,7 @@
         <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Emergency</h2>
         <nav class="list-none mb-10">
           <li>
-            <p class="text-gray-600 hover:text-gray-800">If you are in a life threatening situation - don’t use this site. Call 988 or use these <a href="Resources.html">resources</a> to get immediate help.</p>
+            <p class="text-black hover:text-gray-800">If you are in a life threatening situation - don’t use this site. Call 988 or use these <a href="blogs.html"><b>RESOURCES</b></a> to get immediate help.</p>
           </li>
           <li>
         </nav>
@@ -258,8 +342,8 @@
   </div>
   <div class="bg-gray-100">
     <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-      <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Tailblocks —
-        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@knyttneve</a>
+      <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 FitMindHub —
+        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@fitmind_hub</a>
       </p>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
         <a class="text-gray-500">
